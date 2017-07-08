@@ -1,0 +1,25 @@
+{
+  "request": {
+    "customMatcher": {
+      "name": "wpgMatcher",
+      "parameters": {
+        "method": "POST",
+        "url": "/test",
+        "headers": {
+          "Content-type": "application/xml"
+        },
+        "xpath": [
+          "/some/of/and[@another='fixed']"
+        ],
+        "xmlLikeFile": "examples/testMapping_example.xml"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "responses/testMapping_response.xml",
+    "headers": {
+      "Content-type": "application/xml"
+    }
+  }
+}
